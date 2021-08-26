@@ -2,6 +2,10 @@ header {
   background-color: bisque;
 }
 
+main {
+  background-color: pink;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -13,4 +17,21 @@ nav a {
 
 h1 {
   flex: 1;
+  /* Font-family */
+  /* Font-size */
+  /* Text color */
 }
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.category div {
+  grid-column: 1/3;
+}
+
+/* @media screen and (minmax 800px){
+     .category{
+         display: block;
+      } */
