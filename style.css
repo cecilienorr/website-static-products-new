@@ -60,6 +60,66 @@ a.sub:hover {
   color: white;
 }
 
+/* PRODUCTLIST PAGE */
+
+.main-productlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sold-out {
+  position: relative;
+  text-align: center;
+}
+
+.sold-out img {
+  filter: opacity(50%);
+}
+
+.sold-out img:hover {
+  filter: opacity(100%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  padding: 20px 20px;
+  background-color: #f08080;
+}
+
+/* Remove box when hover */
+/* .sold-out .centered:hover {
+  display: none;
+} */
+
+.product h3,
+h4,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+strike {
+  color: #d62828;
+  font-family: "Montserrat", sans-serif;
+}
+
+.discount {
+  line-height: 3px;
+}
+
 footer {
   padding-top: 15rem;
   text-align: center;
@@ -80,5 +140,13 @@ footer a {
   nav a {
     font-size: 14px;
     padding-right: 5px;
+  }
+}
+
+@supports (display: grid) {
+  .main-productlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
   }
 }
