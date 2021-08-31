@@ -13,7 +13,6 @@ function showProduct(product) {
   document.querySelector(".product .productname").textContent =
     product.productdisplayname;
 
-  // Does not work
   document.querySelector(
     "img.product-img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;

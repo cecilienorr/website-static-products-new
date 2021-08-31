@@ -74,16 +74,17 @@ img {
   max-width: 100%;
 }
 
-.sold-out {
+.soldOut {
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
-.sold-out img {
+.soldOut img {
   filter: opacity(50%);
 }
 
 .centered {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,13 +97,17 @@ img {
   background-color: #f08080;
 }
 
+.soldOut .centered {
+  display: block;
+}
+
 .product h3,
 h4,
 p {
   font-family: "Montserrat", sans-serif;
 }
 
-strike {
+del {
   color: #d62828;
   font-family: "Montserrat", sans-serif;
 }
@@ -131,7 +136,6 @@ strike {
 }
 
 .product-information {
-  display: block;
   text-align: center;
 }
 

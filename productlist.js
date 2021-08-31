@@ -38,7 +38,9 @@ function showProduct(product) {
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   if (product.soldout) {
-    copy.querySelector("article").classList.add("soldOut");
+    console.log(product);
+  } else {
+    copy.querySelector(".soldOut").classList.remove("soldOut");
   }
 
   copy.querySelector(".price").textContent = product.price;
