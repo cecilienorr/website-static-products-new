@@ -35,28 +35,37 @@
 
     <main class="main-productlist">
 
-        <article class="product">
-            <section>
-                <div class="sold-out">
-                    <img src="img/black-tee.webp">
-                    <div class="centered">SOLD OUT</div>
-                </div>
+        <template id="smallProductTemplate">
 
-                <h3 class="productname">Unisex - T-shirt Print</h3>
-                <h4 class="brand">Yourturn</h4>
-                <p class="price">79 DKK</p>
-            </section>
+            <article class="product">
 
-            <!-- <section>
-                <p class="info">
-                    <strong>Cut:</strong> Round neck shape <br>
-                    <strong>Pattern:</strong> Print
-                </p>
-            </section> -->
-        </article>
+                <section>
+                    <a href="productpage.html?id=1165"><img src="img/brown-tee.webp"></a>
+                    <h3 class="productname">T-shirt basic</h3>
+                    <h4 class="brand">Nike</h4>
 
+                    <div class="discount">
+                        <p class="price"></p>
+                        <del class="discount-price"></del>
+                    </div>
+                </section>
 
-        <article class="product">
+            </article>
+        </template>
+
+        <!-- <article class="product">
+                <section>
+                    <div class="sold-out">
+                        <img src="img/black-tee.webp">
+                        <div class="centered">SOLD OUT</div>
+                    </div>
+                    <h3 class="productname">Unisex - T-shirt Print</h3>
+                    <h4 class="brand">Yourturn</h4>
+                    <p class="price">79 DKK</p>
+                </section>
+            </article> -->
+
+        <!-- <article class="product">
 
             <section>
                 <a href="productpage.html"><img src="img/brown-tee.webp"></a>
@@ -65,16 +74,9 @@
 
                 <div class="discount">
                     <p class="price">179 DKK</p>
-                    <strike>199 DKK</strike>
+                    <del>199 DKK</del>
                 </div>
             </section>
-
-            <!-- <section>
-                <p class="info">
-                    Cut: Round neck shape <br>
-                    Pattern: Unicolor
-                </p>
-            </section> -->
 
         </article>
 
@@ -98,12 +100,6 @@
                 <p class="price">99 DKK</p>
             </section>
 
-            <!-- <section>
-                <p class="info">
-                    <strong>Pattern:</strong> Unicolor
-                </p>
-            </section> -->
-
         </article>
 
         <article class="product">
@@ -115,12 +111,6 @@
                 <p class="price">139 DKK</p>
             </section>
 
-            <!-- <section>
-                <p class="info">
-                    <strong>Material:</strong> Cotton
-                </p>
-            </section> -->
-
         </article>
 
         <article class="product">
@@ -130,17 +120,10 @@
                 <h4 class="brand">Monki</h4>
                 <div class="discount">
                     <p class="price">280 DKK</p>
-                    <strike>329 DKK</strike>
+                    <del>329 DKK</del>
                 </div>
             </section>
 
-            <!-- <section>
-                <p class="info">
-                    <strong>Waistline:</strong> High <br>
-                    <strong>Closing:</strong> Hidden Zip-Fly <br>
-                    <strong>Pockets:</strong> Backpockets and sidepockets
-                </p>
-            </section> -->
         </article>
 
         <article class="product">
@@ -152,17 +135,7 @@
                 <p class="price">266 DKK</p>
             </section>
 
-            <!-- <section>
-                <p class="info">
-                    <strong>Fit:</strong> Regular fit <br>
-                    <strong>Pattern:</strong> Unicolor
-                </p>
-            </section> -->
-
-        </article>
-
-
-
+        </article> -->
 
     </main>
 
@@ -175,7 +148,7 @@
 
     </footer>
 
-
+    <script src="productlist.js"></script>
 </body>
 
 </html>
