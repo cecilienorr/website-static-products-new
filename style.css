@@ -2,6 +2,12 @@ html {
   max-width: 2000px;
 }
 
+:root {
+  --primary-text-color: #f08080;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Cinzel", serif;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -11,18 +17,18 @@ nav a {
   margin-left: auto;
   padding-right: 3rem;
 
-  font-family: "Montserrat", sans-serif;
+  font: var(--primary-font);
   font-size: 18px;
-  color: #f08080;
+  color: var(--primary-text-color);
 }
 
 h1 {
   flex: 1;
   padding-left: 2rem;
 
-  font-family: "Cinzel", serif;
+  font: var(--secondary-font);
   font-size: 30px;
-  color: #f4978e;
+  color: var(--primary-text-color);
 }
 
 .category {
@@ -35,9 +41,9 @@ h1 {
 }
 
 .category a {
-  font-family: "Cinzel", serif;
+  font: var(--secondary-font);
   font-size: 22px;
-  color: #f08080;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -152,12 +158,12 @@ footer {
 footer p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #f08080;
+  color: var(--primary-text-color);
 }
 
 footer a {
   text-decoration: none;
-  color: #f08080;
+  color: var(--primary-text-color);
 }
 
 @media screen and (max-width: 950px) {
